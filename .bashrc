@@ -92,8 +92,10 @@ set -o emacs
 #export GEM_PATH="HOME/gems:/usr/lib/ruby/gems/1.8/"
 export PATH="$PATH:/usr/games"
 export CVSROOT='~/src/cvsroot'
-export HTTP_PROXY="http://proxy.dcu.ie:8080"
-export HTTPS_PROXY="http://proxy.dcu.ie:8080"
+unset SSH_ASKPASS
+PYTHONPATH=$HOMEn/lib/python
+PATH="$PATH:/usr/local/arcanist/bin"
+
 
 #This bit deals with murphy
 #if [[ $(uname) == murphy ]]
